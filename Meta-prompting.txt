@@ -1,0 +1,74 @@
+# Meta-prompting: Usar IA para mejorar prompts
+
+El **meta-prompting** es la técnica de usar un modelo de IA (como Claude) para diseñar, analizar, optimizar o iterar sobre prompts. En lugar de que tú escribas directamente el prompt perfecto, le pides a la IA que te ayude a crearlo o mejorarlo.
+
+## ¿Por qué es útil?
+
+- La IA conoce sus propias capacidades y limitaciones
+- Puede sugerir estructura, contexto o ejemplos que mejoren los resultados
+- Ahorra tiempo en iteraciones manuales
+- Identifica ambigüedades o puntos débiles en tus instrucciones
+
+## Ejemplo práctico
+
+### Escenario inicial
+Imagina que necesitas un prompt para generar descripciones de productos de e-commerce, pero tus primeros intentos dan resultados genéricos.
+
+**Tu prompt básico:**
+```
+Escribe una descripción para una cafetera
+```
+
+**Resultado:** Genérico, sin personalidad, sin enfoque en beneficios.
+
+### Aplicando meta-prompting
+
+**Le pides a Claude:**
+```
+Necesito crear un prompt para generar descripciones de productos 
+de e-commerce que sean persuasivas y destaquen beneficios. 
+El producto ejemplo es una cafetera. ¿Puedes ayudarme a diseñar 
+un prompt efectivo que genere mejores resultados?
+```
+
+**Claude podría responder:**
+
+"Te sugiero este prompt estructurado:
+
+```
+Eres un copywriter experto en e-commerce. Escribe una descripción 
+de producto para [PRODUCTO] siguiendo esta estructura:
+
+1. Gancho inicial (1 frase que capture atención)
+2. 3 beneficios clave (enfocados en el usuario, no en características técnicas)
+3. Detalles técnicos relevantes (lista breve)
+4. Call-to-action persuasivo
+
+Tono: Conversacional, entusiasta pero no exagerado
+Longitud: 80-120 palabras
+
+Producto: Cafetera programable de 12 tazas con molinillo integrado
+```
+
+¿Quieres que pruebe este prompt y luego lo ajustemos según el resultado?"
+
+### Ventajas de este enfoque
+
+1. **Estructura clara** que puedes reutilizar
+2. **Especificaciones** de tono y longitud
+3. **Formato** que facilita consistencia
+4. **Iteración rápida** basada en resultados
+
+## Otro ejemplo: Meta-prompting para código
+
+**Pregunta:**
+"Necesito un prompt que genere funciones Python bien documentadas. ¿Qué debería incluir en mis instrucciones?"
+
+**Respuesta tipo meta-prompt:**
+- Especificar estilo de docstrings (Google, NumPy, etc.)
+- Pedir type hints
+- Solicitar ejemplos de uso
+- Indicar manejo de errores esperado
+- Definir convenciones de naming
+
+El meta-prompting convierte a la IA en tu colaborador para el diseño de prompts, no solo en el ejecutor de los mismos.
